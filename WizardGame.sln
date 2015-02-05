@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard.AI", "Wizard.AI\Wizard.AI.csproj", "{13371C9D-6EF2-442C-B817-C51A418CBDF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard.Core", "Wizard.Core\Wizard.Core.csproj", "{1038C419-CC89-425A-927B-10AF956F5DED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard.Test", "Wizard.Test\Wizard.Test.csproj", "{F7FAFAD9-FB13-4C70-9152-1DD82E585B04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37067E22-CD4D-46D3-B2D8-1F57BE8AFEED}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		WizardGame.vsmdi = WizardGame.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard", "Wizard\Wizard.csproj", "{465476DA-2B00-486D-AA76-3A856089F514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard.IO", "Wizard.IO\Wizard.IO.csproj", "{106D2629-AE1C-46E0-BA48-FDB8C051CB28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard.Common", "Wizard.Common\Wizard.Common.csproj", "{57F60140-4743-49F1-9564-F73D8127C0E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13371C9D-6EF2-442C-B817-C51A418CBDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13371C9D-6EF2-442C-B817-C51A418CBDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13371C9D-6EF2-442C-B817-C51A418CBDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13371C9D-6EF2-442C-B817-C51A418CBDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1038C419-CC89-425A-927B-10AF956F5DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1038C419-CC89-425A-927B-10AF956F5DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1038C419-CC89-425A-927B-10AF956F5DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1038C419-CC89-425A-927B-10AF956F5DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7FAFAD9-FB13-4C70-9152-1DD82E585B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7FAFAD9-FB13-4C70-9152-1DD82E585B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7FAFAD9-FB13-4C70-9152-1DD82E585B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7FAFAD9-FB13-4C70-9152-1DD82E585B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465476DA-2B00-486D-AA76-3A856089F514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465476DA-2B00-486D-AA76-3A856089F514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465476DA-2B00-486D-AA76-3A856089F514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465476DA-2B00-486D-AA76-3A856089F514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106D2629-AE1C-46E0-BA48-FDB8C051CB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106D2629-AE1C-46E0-BA48-FDB8C051CB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106D2629-AE1C-46E0-BA48-FDB8C051CB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106D2629-AE1C-46E0-BA48-FDB8C051CB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F60140-4743-49F1-9564-F73D8127C0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F60140-4743-49F1-9564-F73D8127C0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F60140-4743-49F1-9564-F73D8127C0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F60140-4743-49F1-9564-F73D8127C0E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WizardGame.vsmdi
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{106D2629-AE1C-46E0-BA48-FDB8C051CB28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wizard.IO</RootNamespace>
+    <AssemblyName>Wizard.IO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IOType.cs" />
+    <Compile Include="ConsoleIOManager.cs" />
+    <Compile Include="FormIOManager.cs" />
+    <Compile Include="Forms\FrmInitWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInitWelcome.Designer.cs">
+      <DependentUpon>FrmInitWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain3p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain3p.Designer.cs">
+      <DependentUpon>FrmMain3p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain4p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain4p.Designer.cs">
+      <DependentUpon>FrmMain4p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain5p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain5p.Designer.cs">
+      <DependentUpon>FrmMain5p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain6p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain6p.Designer.cs">
+      <DependentUpon>FrmMain6p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmScores.Designer.cs">
+      <DependentUpon>FrmScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IIOManager.cs" />
+    <Compile Include="IOManagerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\misc\card_back1.jpg" />
+    <Content Include="images\splash\splashscreen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FrmInitWelcome.resx">
+      <DependentUpon>FrmInitWelcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMain3p.resx">
+      <DependentUpon>FrmMain3p.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmScores.resx">
+      <DependentUpon>FrmScores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wizard.Common\Wizard.Common.csproj">
+      <Project>{57F60140-4743-49F1-9564-F73D8127C0E6}</Project>
+      <Name>Wizard.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
